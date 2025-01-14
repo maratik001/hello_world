@@ -1,0 +1,25 @@
+fsck -yf /dev/sda1
+exit
+
+sudo docker compose up --build    : rebuild and restart container
+sudo docker compose up            : run image
+sudo docker images		  : shows all images available
+sudo docker ps			  : shows the list of container IDs, Images, ports ....
+docker exec -it <container-name> bash   : log in to container
+cat /etc/lsb-release		  : shows ubuntu release the host is running
+ps --no-headers -o comm l	  : init system the the platform uses
+sudo systemctl start mongod		: starts mongod db
+sudo systemctl status mongod		:verifies if it started successfully
+sudo systemctl restart mongod
+sudo systemctl stop mongod
+
+sudo apt install python3-pip		: installing pip
+sudo mount -t vboxsf Ubuntu ./Desktop   : creating shared folder
+
+git config --global --list
+git init <my-project>			: created new repository
+git init				: initialize the git repository
+git remote add origin repository-url	: connects local repository to remote repository
+git add . 				: It is used to add changes in your working directory to the staging area, also known as the index
+git commit -m "Initial changes added"	: It is used to record changes to the repository, creating a snapshot of the current state of the project
+git push --set-upstream origin master2  : command is used to set the upstream branch for the current local branch. This means that the local branch will be linked to a remote branch on the specified remote repository (in this case, origin).
